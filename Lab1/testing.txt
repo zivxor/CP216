@@ -1,0 +1,22 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author: Zivkovic Luka 
+ID: 	169102858
+Email:  zivk2858@mylaurier.ca
+Date:   01-21-2026
+-------------------------------------------------------
+Answers for Lab 1
+-------------------------------------------------------
+
+Task 1
+
+Nothing changes, r1 is still storing 0x9, r2 is still 0xE and the output remains 0x17. In decimal r1 and r2 are 9 and 14, and r3 holds the sum of 23 and this is the case when we switch the hexadecimal notation with decimal aswell.
+
+Task 2
+
+This is legal, it works and the final value stored within register 3 is 0x10 which correlates to decimal number 16 which is indeed 8 + 8
+
+Task 3
+
+When I tried to add values 4 and 5 immediately to r4 the program did not compile, then after adding the intermediate step and changed the middle operand to a register even tho 5 was just a number it compiled and executed successfully.
