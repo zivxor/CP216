@@ -1,0 +1,58 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author:  Zivkovic Luka
+ID:      169102858
+Email:   zivk2858@mylaurier.ca
+Date:    02-09-2026
+-------------------------------------------------------
+Answers for Lab 3
+-------------------------------------------------------
+
+Task 1
+-------------------------------------------------------
+
+When I run the iteration where the "bgt" is used then the value in
+Register three is 0 in both hexadecimal and signed decimal.
+
+But when the "bgt" is changed to "bge" the new hexadecimal value stored
+In register three is 0xFFFFFFFF which is a -1 in decimal
+
+This makes sense because in the first case we are branching if the 
+Value in r3 is greater than zero, which it is not, but then when changed
+To grater than or equal to, the condition is true because r[3] holds 0,
+So we branch and decrement by 1, then the condition is broken.
+-------------------------------------------------------
+
+Task 2
+-------------------------------------------------------
+
+When you add a label the address of the label is stored 
+In r0 and has address 0x1020. This is probably because the
+Length of .text section gets holds consecutive instructions 
+From 0x1000 onwards, and then the data region comes after
+Continuing where the .text portion of the code stopped.
+
+-------------------------------------------------------
+Task 3
+
+-------------------------------------------------------
+
+Prior to the changes, the program counter is stuck reading
+The same instructions over and over again. r2 also constantly
+Changes alongside the program counter. There appears to be 
+Some sort of pattern to the numbers that I can see appearing in r2.
+The less on the right of the screen appear to be shifting
+From left to right. 
+
+After the changes, it still creates an infinite look with 
+Pc cycling through the same instructions, but the output that I
+See in r2 are completely different that the ones I was seeing
+Before the changes. R0 and r1 remain unchanged. The less on the right
+Are flickering very fast
+
+The behaviour is completely changed when the we make the changes.
+
+
+
+
